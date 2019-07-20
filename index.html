@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kapil Ananth</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	<link rel="stylesheet" href="./css/application.min.css">
+	<link rel="stylesheet" href="./css/animate.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/brands.css" integrity="sha384-vfTtNoEyqnxivzqkzc+mvlVeCWPGwMlIIkeTkt0mcUQNmFLyyXxY5SgZIkKQIXRK" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/fontawesome.css" integrity="sha384-NnhYAEceBbm5rQuNvCv6o4iIoPZlkaWfvuXVh4XkRNvHWKgu/Mk2nEjFZpPQdwiz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+	<style>
+		.bg-black {
+			background-color: #1a1a1a;
+		}
+		.main-text h1 {
+			margin-bottom: 25px;
+			font-size: 3rem;
+			text-align: left;
+		}
+		.main-text h2 {
+			margin-bottom: 25px;
+			font-size: 1.8rem;
+			text-align: left;
+		}
+		.main-text hr {
+			margin-top: 25px;
+			margin-bottom: 5px;
+		}
+		span {
+			display: inline-block;
+		}
+		.card {
+			border-radius: 40px;
+    		box-shadow: 2px 2px 8px rgba(193, 193, 193, 0.5);
+    		margin: 5px;
+		}
+		.card:hover {
+			box-shadow: 2px 2px 14px rgba(167, 166, 166, 0.7);
+		}
+		.rounded {
+			border-radius: 40px;
+		}
+		#arr:hover
+		{
+				height: 20px;
+		}
+		.middle-xs
+		{
+			margin: 5px;
+		}
+		#foot-text
+		{
+			font-size: 15px;
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="main">
+		<section class="section bg-black">
+			<div class="row between-xs" style="height:100%;flex-direction: column;">
+				<div class="row end-xs">
+					<div class="col-xs-2 col-md-1 text-center"><a href="https://behance.net/kapilananth">
+						<i class="fab circle-icon fa-behance fa-2x"></i></a>
+					</div>
+					<div class="col-xs-2 col-md-1 text-center"><a href="https://dribbble.com/kapilananth">
+						<i class="fab circle-icon fa-dribbble fa-2x"></i></a>
+					</div>
+				</div>
+				<div style="color: white; " class="row center-xs">
+					<div class="main-text">
+						<h1>Hi, I am</h1>
+						<h1><span class="animated fadeInLeft">Kapil</span> <span class="animated fadeInLeft delay-1s">Ananth</span></h1>
+						<hr>
+						<h2 class="animated fadeInDown delay-2s">Graphic Designer</h2>
+					</div>
+				</div>
+				<div class="row center-xs animated pulse" id="arr">
+						<img onclick="page.moveTo(1);" src="./img/arrow.png" width="75" height=auto alt="arrow" >
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="row middle-xs" style="height:100%;">
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+						<img class="rounded" src="https://cdn.dribbble.com/users/2506132/screenshots/5024343/tyrion_jpeg_2x.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+							<img class="rounded" src="https://cdn.dribbble.com/users/2506132/screenshots/5024343/tyrion_jpeg_2x.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="row middle-xs" style="height:100%;">
+				<div class="col-xs-12 col-md-6" >
+					<div class="card">
+							<img class="rounded" src="https://cdn.dribbble.com/users/2506132/screenshots/5024343/tyrion_jpeg_2x.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="card">
+							<img class="rounded" src="https://cdn.dribbble.com/users/2506132/screenshots/5024343/tyrion_jpeg_2x.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer >
+				<div  style="min-height: 100px;background-color: #1a1a1a; align-content: center;">
+					<div class=" animated pulse" id="triangle"><img style="display:block; margin-left: auto; margin-right: auto;max-width:60px;" src="./img/footer.png" alt=""></div>
+					<div class="row between-xs">
+						<div style="margin-left:15px;" class="col-xs-12 col-md-2">
+							<div class="foot-text">
+							<h1>Contact Me</h1>
+							<h1> </h1>
+							<h3>kapilananth15@gmail.com</h3></div>
+						</div>
+						<div class="col-xs-12 col-md-4" id="foot-resume">
+							<h1 style="text-align: right;margin-right:15px">Check out my <a href="./img/Resume Kapil Ananth.pdf">resume</a></h1>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</div>
+	
+	<script src="./js/fullPage.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+	<script>
+			var page = new FullPage("#main",{
+				section: '.section',
+				animationDuration: 700,
+				animationTiming: 'ease',
+				animationTranform: 'transform',
+				pagination: true,
+				keyboard: true,
+				touch: true,
+				touchLimit: 100,
+				loop: false,
+				onLeave: null,
+				afterLoad: function(index) {
+					console.log(index);
+				}				
+			});
+			window.page = page;
+	</script>
+</body>
+</html>
